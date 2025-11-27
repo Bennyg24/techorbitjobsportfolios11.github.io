@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Marketing Analyst Portfolio - Naomi James</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel-stylesheet>
+    <style>
+        /* --- Digital Marketing Design: Dynamic, Vibrant, Growth-Focused --- */
+        :root {
+            --dma-pink: #FF69B4; /* Hot Pink */
+            --dma-teal: #008080; /* Dark Teal */
+            --dma-background: #F0F5F9;
+            --dma-text: #333;
+            --dma-card-bg: white;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dma-text);
+            background: var(--dma-background);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- Header/Hero Section --- */
+        .dma-header {
+            padding: 60px 0;
+            background: linear-gradient(90deg, var(--dma-teal) 0%, var(--dma-pink) 100%);
+            color: white;
+            text-align: left;
+            position: relative;
+        }
+
+        /* Top Left Rectangular Image */
+        .profile-img-container {
+            width: 250px;
+            height: 300px;
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-right: 5px solid var(--dma-teal);
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+        }
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: contrast(1.1);
+        }
+
+        .dma-content {
+            padding-left: 300px; /* Offset for the image */
+        }
+
+        #dynamicGreeting {
+            font-size: 1.2em;
+            color: var(--dma-teal);
+            margin-bottom: 5px;
+        }
+
+        .dma-header h1 {
+            font-size: 3.5em;
+            font-weight: 900;
+            margin-bottom: 5px;
+            line-height: 1;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        .dma-header h2 {
+            font-size: 1.5em;
+            color: white;
+            margin-bottom: 25px;
+        }
+
+        /* --- Main Sections --- */
+        .dma-section {
+            padding: 70px 0;
+            text-align: center;
+        }
+
+        .dma-section h3 {
+            font-size: 2.5em;
+            color: var(--dma-teal);
+            margin-bottom: 40px;
+            position: relative;
+        }
+        .dma-section h3::before {
+            content: '🚀';
+            font-size: 0.8em;
+            display: block;
+        }
+
+        .dma-skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .dma-skill-card {
+            background: var(--dma-card-bg);
+            padding: 25px;
+            border-left: 5px solid var(--dma-pink);
+            text-align: left;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        .dma-skill-card h4 {
+            color: var(--dma-teal);
+        }
+        
+        /* Project Specific Styles */
+        .dma-project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+            text-align: left;
+        }
+        .dma-project-card {
+            background: var(--dma-card-bg);
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .dma-project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--dma-pink);
+        }
+        .dma-project-card-content {
+            padding: 20px;
+        }
+        .dma-project-card-content h4 {
+            color: var(--dma-teal);
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+        .dma-project-card-content a {
+            font-weight: 700;
+            color: var(--dma-pink);
+        }
+
+        /* --- Call to Action (CTA) --- */
+        .dma-cta-section {
+            background: var(--dma-teal);
+            padding: 80px 0;
+            text-align: center;
+            color: white;
+        }
+        .dma-cta-section h3 {
+            font-size: 2.2em;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .dma-cta-btn {
+            display: inline-block;
+            background: var(--dma-pink);
+            color: white;
+            padding: 16px 45px;
+            border-radius: 5px;
+            font-weight: 700;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            box-shadow: 0 5px 20px var(--dma-pink);
+            transition: all 0.3s ease;
+        }
+        .dma-cta-btn:hover {
+            background: var(--dma-pink);
+            filter: brightness(1.2);
+            transform: scale(1.05);
+        }
+
+        /* --- Responsiveness --- */
+        @media (max-width: 768px) {
+            .dma-header {
+                padding: 350px 20px 60px;
+                text-align: center;
+            }
+            .profile-img-container {
+                width: 100%;
+                height: 330px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            .dma-content {
+                padding-left: 0;
+            }
+            .dma-header h1 {
+                font-size: 3em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="about" class="dma-header">
+        <div class="profile-img-container">
+            <img src="https://techorbitjobs.com/wp-content/uploads/2025/10/testimonial-8.webp" alt="Naomi James Profile Picture">
+        </div>
+        <div class="container dma-content">
+            <div id="dynamicGreeting"></div>
+            <h1>I'M NAOMI JAMES</h1>
+            <h2>// DIGITAL MARKETING ANALYST //</h2>
+            <p>I turn raw data into actionable strategies, driving high-converting campaigns across paid search, social media, and SEO channels.</p>
+        </div>
+    </header>
+
+    <section id="skills" class="dma-section">
+        <div class="container">
+            <h3>ANALYTICS & CONVERSION EXPERTISE</h3>
+            <div class="dma-skills-grid">
+                <div class="dma-skill-card"><h4>Platforms</h4><p>Google Analytics 4, Tag Manager, Search Console</p></div>
+                <div class="dma-skill-card"><h4>Paid Media</h4><p>Google Ads, Facebook Ads Manager, A/B Testing</p></div>
+                <div class="dma-skill-card"><h4>Data Visualization</h4><p>Looker Studio (Data Studio), Excel/SQL</p></div>
+                <div class="dma-skill-card"><h4>Strategy</h4><p>Conversion Rate Optimization (CRO), SEO, Funnel Analysis</p></div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="dma-section">
+        <div class="container">
+            <h3>FEATURED PROJECTS</h3>
+            <div class="dma-project-grid">
+                <div class="dma-project-card">
+                    <img src="project1.png"
+
+[Image of Google Analytics 4 Dashboard Screenshot]
+" alt="Google Analytics 4 Dashboard Screenshot">
+                    <div class="dma-project-card-content">
+                        <h4>Conversion Rate Optimization (CRO) Audit</h4>
+                        <p>Led a comprehensive CRO audit resulting in a 15% increase in lead submission rate for an SaaS client over 6 months.</p>
+                        <a href="[Link to Case Study PDF]">View Case Study</a>
+                    </div>
+                </div>
+                <div class="dma-project-card">
+                    <img src="project2.png" alt="Google Ads Account Screenshot">
+                    <div class="dma-project-card-content">
+                        <h4>High-ROI Paid Search Campaign</h4>
+                        <p>Managed a Google Ads account, achieving a 4:1 ROAS by optimizing bidding strategies and campaign structure.</p>
+                        <a href="[Link to Performance Report]">View Performance Report</a>
+                    </div>
+                </div>
+                <div class="dma-project-card">
+                    <img src="project3.png" alt="Looker Studio Report Screenshot">
+                    <div class="dma-project-card-content">
+                        <h4>Automated Data Visualization (Looker Studio)</h4>
+                        <p>Developed dynamic, multi-channel reports in Looker Studio, reducing manual reporting time by 70%.</p>
+                        <a href="[Link to Sample Report]">View Sample Report</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dma-cta-section">
+        <div class="container">
+            <h3>READY TO MAXIMIZE YOUR MARKETING ROI?</h3>
+            <a href="[Link to Contact/Discovery Call]" class="dma-cta-btn">HIRE NAOMI TO ANALYZE</a>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const greetingElement = document.getElementById('dynamicGreeting');
+            const date = new Date();
+            const hour = date.getHours();
+            let greeting;
+
+            if (hour < 12) {
+                greeting = 'Good morning!';
+            } else if (hour < 18) {
+                greeting = 'Good afternoon!';
+            } else {
+                greeting = 'Good evening!';
+            }
+
+            if (greetingElement) {
+                greetingElement.textContent = greeting + ' Welcome to my portfolio,';
+            }
+        });
+    </script>
+</body>
+</html>
